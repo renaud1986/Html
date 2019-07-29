@@ -101,7 +101,7 @@ img{
 section article{
     display: flex;
     padding: 2em;
-    border: 2px green solid;  
+    border: 3px green solid;  
 }
 
 section article section{
