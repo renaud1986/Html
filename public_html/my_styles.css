@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-juil.-2019, 16:03:31
+    Author     : Formateur
+*/
+
+body{
+    background: rgba(238,219,181,1);
+    background: -moz-linear-gradient(left, rgba(238,219,181,1) 0%, rgba(229,154,42,1) 51%, rgba(239,222,190,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(238,219,181,1)), color-stop(51%, rgba(229,154,42,1)), color-stop(100%, rgba(239,222,190,1)));
+    background: -webkit-linear-gradient(left, rgba(238,219,181,1) 0%, rgba(229,154,42,1) 51%, rgba(239,222,190,1) 100%);
+    background: -o-linear-gradient(left, rgba(238,219,181,1) 0%, rgba(229,154,42,1) 51%, rgba(239,222,190,1) 100%);
+    background: -ms-linear-gradient(left, rgba(238,219,181,1) 0%, rgba(229,154,42,1) 51%, rgba(239,222,190,1) 100%);
+    background: linear-gradient(to right, rgba(238,219,181,1) 0%, rgba(229,154,42,1) 51%, rgba(239,222,190,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eedbb5', endColorstr='#efdebe', GradientType=1 );
+    text-align: center;
+}
+
+p {  
+    color : #0000FF;
+    font-family: verdana;
+    
+}
+
+h1,h2{
+
+    background-color: #C6C6C6;
+    color : #675029; 
+}
+
+img{
+    border-style: solid;
+    border-color: #66B025;
+    border-width: 15px;
+}
+
+#animaux{
+    
+    list-style-type: none;
+    list-style-image: url(images/etoile.jpg);
+    margin-left: 20px;  
+}

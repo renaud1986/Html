@@ -1,0 +1,142 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-juil.-2019, 7:18:20
+    Author     : Formateur
+*/
+
+body{
+    /* centrer mon contenu */ 
+  /*  max-width: 60%;
+    height: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    background: rgba(48,131,248,1);
+    background: -moz-linear-gradient(left, rgba(48,131,248,1) 0%, rgba(91,156,241,1) 46%, rgba(14,118,246,1) 68%, rgba(39,132,231,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(48,131,248,1)), color-stop(46%, rgba(91,156,241,1)), color-stop(68%, rgba(14,118,246,1)), color-stop(100%, rgba(39,132,231,1)));
+    background: -webkit-linear-gradient(left, rgba(48,131,248,1) 0%, rgba(91,156,241,1) 46%, rgba(14,118,246,1) 68%, rgba(39,132,231,1) 100%);
+    background: -o-linear-gradient(left, rgba(48,131,248,1) 0%, rgba(91,156,241,1) 46%, rgba(14,118,246,1) 68%, rgba(39,132,231,1) 100%);
+    background: -ms-linear-gradient(left, rgba(48,131,248,1) 0%, rgba(91,156,241,1) 46%, rgba(14,118,246,1) 68%, rgba(39,132,231,1) 100%);
+    background: linear-gradient(to right, rgba(48,131,248,1) 0%, rgba(91,156,241,1) 46%, rgba(14,118,246,1) 68%, rgba(39,132,231,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3083f8', endColorstr='#2784e7', GradientType=1 );
+ */
+  border: 2px blue solid;
+}
+
+h1{
+   /* text-align: center;*/
+
+}
+
+h1,h2{
+   /* background-color: #DAA520; */
+   
+}
+
+h2{
+   padding-left: 1.5em;
+}
+
+p{
+
+   /* color: chocolate; */
+   /* text-align: center; */
+}
+
+ul{
+
+    list-style-type: none;
+    /*list-style-type: square;*/ 
+}
+
+li{
+    
+}
+
+aside{
+    width: 10%;
+    background-color: #A9A9A9;
+    border-radius: 20px;
+}
+
+#contenaire{
+  display: flex;
+  margin-bottom: 5em;
+  border: 2px pink solid;
+  
+} 
+
+#contenaire section{
+    /*width: 50%;*/
+    width: 89%;
+    
+}
+
+header{
+    text-align: center;
+}
+
+figure{
+    position: absolute;
+    top:0;
+    right: 0;
+    text-align: right;
+}
+
+img{
+    border-style: inset;
+    border-color: darkorange;
+    border-width: 15px;
+    border-radius: 25px;
+    box-shadow: 21px 22px 7px -6px rgba(48,52,66,1);
+    height: auto;
+    width: 15%;
+}
+
+section article{
+    display: flex;
+    padding: 2em;
+    border: 2px green solid;  
+}
+
+section article section{
+    
+    flex-wrap: wrap;
+    border: 2px red solid;   
+}
+
+nav{
+       
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+footer{
+    
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px){
+    aside{
+        display: none;
+    }
+    article{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    figure{
+        display: none;
+    }
+}
