@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+part 2 - html & css with navBar
+! not m.first !!! nav to hamburger
+-->
+<html>
+    <head>
+        <title>sticky navigation - pure CSS - no JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <style>
+            body{
+                margin : 0;
+                padding: 0;
+                font-family: sans serif;
+                background-color: #000;
+                color: #fff;
+            }
+            header {
+                box-sizing: border-box;
+                text-align: center;
+            }
+            section{
+                width: 100%;
+                height: 100vh; /* */
+            }
+            section.sec1{
+                background: url(img1.jpg);
+                background-size: cover;
+            }
+            section.sec2, section.sec4, section.sec6{
+                padding: 5px;
+                box-sizing: border-box;
+                height: auto;
+            }
+            section.sec2 h3, section.sec4 h3, section.sec6 h3{
+                font-size: 3em;
+                margin : 0;
+                padding: 0;
+                color: #fff;
+            }
+            section.sec2 p, section.sec6 p,  section.sec6 p a{
+                font-size: 1.4em;
+                margin : 0;
+                padding: 0;
+                color: #fff;  
+            }
+            section.sec4 ol, section.sec6 ol  {
+                font-size: 1.4em;
+                margin : 0;
+                padding: 0;
+                color: #fff;  
+            }
+            section.sec4 ol li a, section.sec6 ol li a {
+                font-size: 1.4em;
+                margin : 0;
+                padding: 0;
+                color: #fff;  
+            }
+            section.sec3{
+                background: url(img2.jpg);
+                background-size: cover;
+            }
+            section.sec5{
+                background: url(img3.jpg);
+                background-size: cover;
+            }
+            section.sec6 a{
+                color: aquamarine;
+            }
+
+            /* MENU */
+            nav{
+                width: 100%;
+                height:50px;
+                background: rgba(0,0,0,.8);
+                border-top: 1px solid rgba(255,255,255,.2);
+                border-bottom: 1px solid rgba(255,255,255,.2);
+                /* STICKY effect*/
+                position: sticky;
+                top: 0;
+            }
+            nav ul{
+                display: flex; 
+                margin : 0;
+                padding: 0 100px;
+                float: right;
+            }
+            nav ul li{
+                list-style: none;
+            }
+            nav ul li a{
+                display: block;
+                color: #fff;
+                padding: 0 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;  
+                line-height: 50px; /*height de nav*/
+            }
+            nav ul li a.active, nav ul li a:hover{
+                background: teal;
+            }
+            nav ul li a.active {
+                color: plum; 
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <img src="logo.png" alt="logo">
+            <h2> Renaud Marzana</h2>
+            <h3>Courageux, Déterminé, Responsable</h3>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">R.M</a></li>
+                <li><a href="#cv">Cv</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="sec1"></section>
+        <section class="sec2" id="cv">
+            <h2>Expériences</h2>
+            <ul> 
+                <li> 05/2019 - 05/2020 : Animateur / Formateur chez FOBAGRA asbl</li>
+                <li> Depuis 01/2018 : Intermédiaire en assurances chez OVB Sa </li>
+                <li> 04/2016 - 06/2017 : Intermédiaire en assurances chez ERGO Sa </li>
+            </ul>     
+        </section>
+        <section class="sec3"></section>
+        <section class="sec4">
+
+            <h2>Compétences</h2>
+            <ul>
+                <li> Android</li>
+                <li> IOS</li>
+                <li> HTML/CSS</li>
+                <li> JAVA</li>
+                <li> SQL</li>
+                <li> Office</li>
+            </ul>
+
+            <h2>Formations</h2>
+            <ul>
+                <li> 05/2018 - 11/2018 : Certification Android/IOS </li>
+                <li> 09/2016 - 11/2016 : Formation Spring/Hibernate </li>
+                <li> 09/2011 - 09/2015 : Bachelier en informatique de gestion EPFC </li>
+            </ul>
+        </section>
+        <section class="sec5"></section>
+        
+        <section class="sec6" id="wix">
+            <h2>Références</h2>
+            <ul>
+                 <li>Facebook</li>
+                 <li>LinkedIn</li>
+                 <li>Indeed, Stepstone</li>
+            </ul>
+
+            <h2>Contact</h2>
+            Pour me contacter cela se passe <a href="mailto:marzana.ovb@gmail.com?subject=Mehhhh Miaouuu&cc=joeldeleux@hotmail.com">ici</a>
+            ou bien par telephone <a href="tel:+32470055818"> la </a>
+
+            <a href="https://api.whatsapp.com/send?phone=32470055818"> Envoi </a>
+
+        </section>
+    </body>
+</html>
